@@ -1,0 +1,309 @@
+/* CSS für NaturAbenteuer Homepage */
+* {
+    box-sizing: border-box;
+}
+
+/* Allgemeines Styling */
+body {
+    background: url('../0.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2C3639; /* Weiße Schrift für bessere Lesbarkeit auf dem Hintergrundbild */
+    padding: 20px;
+    border: 5px solid #08110B;
+}
+
+#team img{
+    width: 100%;
+}
+
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+    border: 1px solid #A2D1AE;
+    text-align: center;
+    
+}
+
+ol{
+    text-align: justify;
+    padding: 20px;
+    margin: 10px;
+    background-color:#A27B5C;
+    border: 1px solid #A2D1AE;
+    
+}
+p{
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+    background-color:#A27B5C;
+    border: 1px solid #A2D1AE;
+}
+
+.text-wichtig{
+    font-weight: bold;
+    text-decoration : underline;
+    font-style: italic;
+    padding: 3px; /* optional für Abstand um den Text herum */
+}
+
+header {
+    border: 5px solid #1B3823;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+nav li {
+    margin-bottom: 20px; /* Abstand zwischen den Listenelementen */
+}
+.nav-list {
+    display: flex;
+    flex-direction: column; /*  Navigation untereinander für mobile Ansicht */
+    justify-content: center;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #E5D9B6;
+    transition: color 0.3s ease;
+    background-color: #285430;
+    padding: 10px;
+    border: 2px solid #C9E4D0;
+    
+    
+}
+
+nav a:hover {
+    color: #CDAD00; /* Dunkleres Gold für Hover-Effekt */
+    text-decoration: underline;
+}
+
+main {
+    border: 5px solid #1B3823;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+      "start start"
+      "team team"
+      "leistungen leistungen"
+      "portfolio portfolio"
+      "kontakt kontakt";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 20px;
+}
+
+#start {
+    grid-area: start;
+    border: 5px solid #2E5F3B;
+}
+
+
+#team {
+    grid-area: team;
+    border: 5px solid #418653;
+}
+
+#leistungen {
+    grid-area: leistungen;
+    border: 5px solid #54AB6A;
+}
+
+
+#portfolio {
+    grid-area: portfolio;
+    border: 5px solid #7BBE8C;
+}
+
+#portfolio img{
+    width: calc(50% - 20px); /* Vier Spalten mit Abstand dazwischen */
+    margin: 10px; /* Abstand zwischen den Bildern */
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+#kontakt {
+    grid-area: kontakt;
+    border: solid 5px #A2D1AE;
+}
+#kontakt a:hover 
+{
+        color: #CDAD00; /* Dunkleres Gold für Hover-Effekt */
+        background-color: rgb(8, 84, 151);
+}
+
+h1, h2, h3 {
+    color: #DCD7C9;
+    text-align: center;
+    background-color:#2C3639;
+    border: 3px solid #7BBE8C;
+}
+
+
+/* Link-Styling */
+a {
+    color: #FFD700; /* Goldene Farbe für Links */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #CDAD00; /* Dunkleres Gold für Hover-Effekt */
+}
+
+/* Telefonnummer und E-Mail-Styling */
+a[href^="tel"], a[href^="mailto"] {
+    color: #FFD700;
+}
+form {
+    border: 5px solid #C9E4D0;
+    margin: 5px;
+    padding: 5px;
+    height: auto;
+}
+/* CSS für focus-within */
+form:focus-within {
+    border: 2px solid #FFD700;
+}
+
+form label {
+    color: #DCD7C9;
+    text-align: center;
+    margin-bottom: 5px;
+    background-color: #3F4E4F;
+    border:3px solid gray;
+}
+
+form input,
+form textarea {
+    font-size: 1.1em; 
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 4px;
+    border-radius: 0.3em;
+    font-weight: lighter;
+    border:3px solid gray;
+}
+
+form button {
+    margin-top: 10px; /* Hier kannst du den Abstand nach Bedarf anpassen */
+    padding: 10px;
+}
+
+footer {
+    border: 5px solid #EEF7F0;
+  }
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+
+    nav li {
+        margin-bottom: 20px; /* Abstand zwischen den Listenelementen */
+    }
+    .nav-list {
+        display: flex;
+        flex-direction: column; /*  Navigation untereinander für mobile Ansicht */
+        justify-content: center;
+    }
+    
+    nav a {
+        text-decoration: none;
+        transition: color 0.3s ease;
+        background-color: #285430;
+        padding: 10px;
+        
+    }
+    
+    nav a:hover {
+        color: #CDAD00; /* Dunkleres Gold für Hover-Effekt */
+        text-decoration: underline;
+    }
+}
+
+footer li {
+    margin-right: 20px;
+    background-color: #285430;
+    padding: 10px;
+    border: 3px solid #7BBE8C
+}
+
+
+
+/* Media Query für Mobile First */
+@media only screen and (min-width: 768px) {
+    
+    
+    .nav-list {
+        display: flex;
+        flex-direction: row; /* Navigation nebeneinander für Desktop-Ansicht */
+        justify-content: center;
+    }
+
+    nav a {
+        margin-bottom: 0; /*: Zurücksetzen des Abstands für Desktop-Ansicht */
+        margin-right: 0px; /* : Hinzufügen von Abstand zwischen den Links in der Desktop-Ansicht */
+    }
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          "start start"
+          "team team"
+          "leistungen leistungen"
+          "portfolio portfolio"
+          "kontakt kontakt"
+          ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 20px;
+        border: 5px solid #1B3823;
+    }
+    
+    #portfolio img{
+    width: calc(25% - 20px);
+    margin: 10px;
+    }
+
+    .flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+    .team-members {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+    .member {
+          width: 50%;
+        }
+}
